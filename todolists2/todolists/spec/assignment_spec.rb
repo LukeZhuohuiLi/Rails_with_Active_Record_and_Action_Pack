@@ -172,7 +172,6 @@ describe Assignment do
             due_date=Date.today
             assignment.create_todolist(:name=> 'mylist', :due_date=>due_date)
             testList = TodoList.find_by list_name: 'mylist'
-            puts testList.id
             expect(testList.id).not_to be_nil
             expect(testList.list_name).to eq "mylist"
             expect(testList.list_due_date).to eq due_date
