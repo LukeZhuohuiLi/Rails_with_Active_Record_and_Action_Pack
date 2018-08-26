@@ -1,0 +1,1383 @@
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ bundle
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 12.3.1
+Using concurrent-ruby 1.0.5
+Using i18n 0.9.5
+Using minitest 5.11.3
+Using thread_safe 0.3.6
+Using tzinfo 1.2.5
+Using activesupport 4.2.8
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.3.0
+Using nokogiri 1.8.4 (x86-mingw32)
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.9
+Using crass 1.0.4
+Using loofah 2.2.2
+Using rails-html-sanitizer 1.0.4
+Using actionview 4.2.8
+Using rack 1.6.10
+Using rack-test 0.6.3
+Using actionpack 4.2.8
+Using globalid 0.4.1
+Using activejob 4.2.8
+Using mini_mime 1.0.1
+Using mail 2.7.0
+Using actionmailer 4.2.8
+Using activemodel 4.2.8
+Using arel 6.0.4
+Using activerecord 4.2.8
+Using debug_inspector 0.0.3
+Using binding_of_caller 0.8.0
+Using bundler 1.16.3
+Using byebug 10.0.2
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using thor 0.20.0
+Using railties 4.2.8
+Using coffee-rails 4.1.1
+Using diff-lcs 1.3
+Using ffi 1.9.25 (x86-mingw32)
+Using multi_json 1.13.1
+Using jbuilder 2.7.0
+Using jquery-rails 4.3.3
+Using json 1.8.6
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.1
+Using rails 4.2.8
+Using rb-fsevent 0.10.3
+Using rb-inotify 0.9.10
+Using rdoc 4.3.0
+Using rspec-support 3.8.0
+Using rspec-core 3.8.0
+Using rspec-expectations 3.8.1
+Using rspec-mocks 3.8.0
+Using rspec-rails 3.8.0
+Using sass-listen 4.0.0
+Using sass 3.5.7
+Using tilt 2.0.8
+Using sass-rails 5.0.7
+Using sdoc 0.4.2
+Using sqlite3 1.3.13 (x86-mingw32)
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.0
+Using tzinfo-data 1.2018.5
+Using uglifier 4.1.18
+Using web-console 2.3.0
+Bundle complete! 13 Gemfile dependencies, 66 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rails generate rspec:install
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+      create  spec/rails_helper.rb
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ bundle
+The dependency therubyracer (>= 0) will be unused by any of the platforms Bundle                      r is installing for. Bundler is installing for x86-mingw32 but the dependency is                       only for ruby. To add those platforms to the bundle, run `bundle lock --add-pla                      tform ruby`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 12.3.1
+Using concurrent-ruby 1.0.5
+Using i18n 0.9.5
+Using minitest 5.11.3
+Using thread_safe 0.3.6
+Using tzinfo 1.2.5
+Using activesupport 4.2.8
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.3.0
+Using nokogiri 1.8.4 (x86-mingw32)
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.9
+Using crass 1.0.4
+Using loofah 2.2.2
+Using rails-html-sanitizer 1.0.4
+Using actionview 4.2.8
+Using rack 1.6.10
+Using rack-test 0.6.3
+Using actionpack 4.2.8
+Using globalid 0.4.1
+Using activejob 4.2.8
+Using mini_mime 1.0.1
+Using mail 2.7.0
+Using actionmailer 4.2.8
+Using activemodel 4.2.8
+Using arel 6.0.4
+Using activerecord 4.2.8
+Using debug_inspector 0.0.3
+Using binding_of_caller 0.8.0
+Using bundler 1.16.3
+Using byebug 10.0.2
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using thor 0.20.0
+Using railties 4.2.8
+Using coffee-rails 4.1.1
+Using diff-lcs 1.3
+Using ffi 1.9.25 (x86-mingw32)
+Using multi_json 1.13.1
+Using jbuilder 2.7.0
+Using jquery-rails 4.3.3
+Using json 1.8.6
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.1
+Using rails 4.2.8
+Using rb-fsevent 0.10.3
+Using rb-inotify 0.9.10
+Using rdoc 4.3.0
+Using rspec-support 3.8.0
+Using rspec-core 3.8.0
+Using rspec-expectations 3.8.1
+Using rspec-mocks 3.8.0
+Using rspec-rails 3.8.0
+Using sass-listen 4.0.0
+Using sass 3.5.7
+Using tilt 2.0.8
+Using sass-rails 5.0.7
+Using sdoc 0.4.2
+Using spring 2.0.2
+Using sqlite3 1.3.13 (x86-mingw32)
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.0
+Using tzinfo-data 1.2018.5
+Using uglifier 4.1.18
+Using web-console 2.3.0
+Bundle complete! 15 Gemfile dependencies, 67 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rspec
+
+Assignment
+  rq01
+    Generate Rails application
+      must have top level structure of a rails application
+  rq02
+    User Model:
+      User class created (FAILED - 1)
+      User database structure in place (PENDING: around hook at ./spec/assignmen                      t_spec.rb:9 did not execute the example)
+      User class properties added
+        example at ./spec/assignment_spec.rb:56 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:57 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:58 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:59 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+  rq03
+    Profile Model:
+      Profile class created (PENDING: around hook at ./spec/assignment_spec.rb:9                       did not execute the example)
+      Profile database structure in place (PENDING: around hook at ./spec/assign                      ment_spec.rb:9 did not execute the example)
+      Profile 1:1 belongs_to relationship to User in place (PENDING: around hook                       at ./spec/assignment_spec.rb:9 did not execute the example)
+      User 1:1 has_one relationship to Profile in place (PENDING: around hook at                       ./spec/assignment_spec.rb:9 did not execute the example)
+      Profile class properties added
+        example at ./spec/assignment_spec.rb:81 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:82 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:83 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:84 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:85 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:86 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:87 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+  rq04
+    TodoList database structure in place (PENDING: around hook at ./spec/assignm                      ent_spec.rb:9 did not execute the example)
+    TodoList Model
+      TodoList class (PENDING: around hook at ./spec/assignment_spec.rb:9 did no                      t execute the example)
+    TodoList class properties added
+      example at ./spec/assignment_spec.rb:118 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:119 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:120 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:121 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+  rq05
+    TodoList has a many:1 belongs_to relationship with User (PENDING: around hoo                      k at ./spec/assignment_spec.rb:9 did not execute the example)
+    User has a 1:many has_many relationship with TodoList (PENDING: around hook                       at ./spec/assignment_spec.rb:9 did not execute the example)
+  rq06
+    TodoItem database structure in place (PENDING: around hook at ./spec/assignm                      ent_spec.rb:9 did not execute the example)
+    TodoItem has a many:1 belongs_to relationship with TodoList (PENDING: around                       hook at ./spec/assignment_spec.rb:9 did not execute the example)
+    TodoList has a 1:many has_many relationship with TodoItem (PENDING: around h                      ook at ./spec/assignment_spec.rb:9 did not execute the example)
+    TodoItem will be destroyed when TodoList deleted (PENDING: around hook at ./                      spec/assignment_spec.rb:9 did not execute the example)
+    TodoItem Model
+      TodoItem class (PENDING: around hook at ./spec/assignment_spec.rb:9 did no                      t execute the example)
+    TodoItem class properties added
+      example at ./spec/assignment_spec.rb:152 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:153 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:154 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:155 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:156 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:157 (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+  rq08
+    User has a 1:many relationship with TodoItem (PENDING: around hook at ./spec                      /assignment_spec.rb:9 did not execute the example)
+    User has a 1:many relationship with TodoItem through TodoList (PENDING: arou                      nd hook at ./spec/assignment_spec.rb:9 did not execute the example)
+  rq09
+    check seed file
+      has a file for seeding the database (PENDING: around hook at ./spec/assign                      ment_spec.rb:9 did not execute the example)
+      must have Users with lastnames for usernames as directed in assignment (PE                      NDING: around hook at ./spec/assignment_spec.rb:9 did not execute the example)
+      must have Profiles set up for each user with the given data (PENDING: arou                      nd hook at ./spec/assignment_spec.rb:9 did not execute the example)
+      must have TodoList set up as directed (PENDING: around hook at ./spec/assi                      gnment_spec.rb:9 did not execute the example)
+      must have TodoItems set up as directed (PENDING: around hook at ./spec/ass                      ignment_spec.rb:9 did not execute the example)
+  rq10
+    Default scope on TodoItem should result in collection in ascending order by                       due_date (PENDING: around hook at ./spec/assignment_spec.rb:9 did not execute th                      e example)
+    Default scope on TodoList should result in collection in ascending order by                       list_due_date (PENDING: around hook at ./spec/assignment_spec.rb:9 did not execu                      te the example)
+  rq11
+    Validators:
+      does not allow a User without a username (PENDING: around hook at ./spec/a                      ssignment_spec.rb:9 did not execute the example)
+      does not allow a Profile with a null first and last name (PENDING: around                       hook at ./spec/assignment_spec.rb:9 did not execute the example)
+      allows a Profile with a null first name when last name present (PENDING: a                      round hook at ./spec/assignment_spec.rb:9 did not execute the example)
+      allows a Profile with a null last name when first name present (PENDING: a                      round hook at ./spec/assignment_spec.rb:9 did not execute the example)
+      does not allow a Profile with a gender other than male or female (PENDING:                       around hook at ./spec/assignment_spec.rb:9 did not execute the example)
+      does not allow a boy named Sue (PENDING: around hook at ./spec/assignment_                      spec.rb:9 did not execute the example)
+      allows a Profile with gender male (PENDING: around hook at ./spec/assignme                      nt_spec.rb:9 did not execute the example)
+      allows a Profile with gender female (PENDING: around hook at ./spec/assign                      ment_spec.rb:9 did not execute the example)
+  check database operations
+    rq12
+      Cascading delete is represented in model dependencies (PENDING: around hoo                      k at ./spec/assignment_spec.rb:9 did not execute the example)
+      User delete must cascade delete to Profile, TodoList and TodoItems (PENDIN                      G: around hook at ./spec/assignment_spec.rb:9 did not execute the example)
+    rq13
+      Will return the number of completed todo_items for a specified user (PENDI                      NG: around hook at ./spec/assignment_spec.rb:9 did not execute the example)
+      User has a get_completed_count method
+        example at ./spec/assignment_spec.rb:349 (PENDING: around hook at ./spec                      /assignment_spec.rb:9 did not execute the example)
+    rq14 - Profile
+      should have a get_all_profiles class method (PENDING: around hook at ./spe                      c/assignment_spec.rb:9 did not execute the example)
+      will return a list of profiles between requested birth years in ascending                       order (PENDING: around hook at ./spec/assignment_spec.rb:9 did not execute the e                      xample)
+
+Pending: (Failures listed here are expected and do not affect your suite's statu                      s)
+
+  1) Assignment rq02 User Model: User database structure in place
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:61
+
+  2) Assignment rq02 User Model: User class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:56
+
+  3) Assignment rq02 User Model: User class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:57
+
+  4) Assignment rq02 User Model: User class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:58
+
+  5) Assignment rq02 User Model: User class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:59
+
+  6) Assignment rq03 Profile Model: Profile class created
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:75
+
+  7) Assignment rq03 Profile Model: Profile database structure in place
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:89
+
+  8) Assignment rq03 Profile Model: Profile 1:1 belongs_to relationship to User                       in place
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:100
+
+  9) Assignment rq03 Profile Model: User 1:1 has_one relationship to Profile in                       place
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:103
+
+  10) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:81
+
+  11) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:82
+
+  12) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:83
+
+  13) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:84
+
+  14) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:85
+
+  15) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:86
+
+  16) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:87
+
+  17) Assignment rq04 TodoList database structure in place
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:123
+
+  18) Assignment rq04 TodoList Model TodoList class
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:111
+
+  19) Assignment rq04 TodoList class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:118
+
+  20) Assignment rq04 TodoList class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:119
+
+  21) Assignment rq04 TodoList class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:120
+
+  22) Assignment rq04 TodoList class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:121
+
+  23) Assignment rq05 TodoList has a many:1 belongs_to relationship with User
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:135
+
+  24) Assignment rq05 User has a 1:many has_many relationship with TodoList
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:138
+
+  25) Assignment rq06 TodoItem database structure in place
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:159
+
+  26) Assignment rq06 TodoItem has a many:1 belongs_to relationship with TodoLis                      t
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:170
+
+  27) Assignment rq06 TodoList has a 1:many has_many relationship with TodoItem
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:173
+
+  28) Assignment rq06 TodoItem will be destroyed when TodoList deleted
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:176
+
+  29) Assignment rq06 TodoItem Model TodoItem class
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:145
+
+  30) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:152
+
+  31) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:153
+
+  32) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:154
+
+  33) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:155
+
+  34) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:156
+
+  35) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:157
+
+  36) Assignment rq08 User has a 1:many relationship with TodoItem
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:182
+
+  37) Assignment rq08 User has a 1:many relationship with TodoItem through TodoL                      ist
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:185
+
+  38) Assignment rq09 check seed file has a file for seeding the database
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:208
+
+  39) Assignment rq09 check seed file must have Users with lastnames for usernam                      es as directed in assignment
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:211
+
+  40) Assignment rq09 check seed file must have Profiles set up for each user wi                      th the given data
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:216
+
+  41) Assignment rq09 check seed file must have TodoList set up as directed
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:226
+
+  42) Assignment rq09 check seed file must have TodoItems set up as directed
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:233
+
+  43) Assignment rq10 Default scope on TodoItem should result in collection in a                      scending order by due_date
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:244
+
+  44) Assignment rq10 Default scope on TodoList should result in collection in a                      scending order by list_due_date
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:262
+
+  45) Assignment rq11 Validators: does not allow a User without a username
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:282
+
+  46) Assignment rq11 Validators: does not allow a Profile with a null first and                       last name
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:286
+
+  47) Assignment rq11 Validators: allows a Profile with a null first name when l                      ast name present
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:289
+
+  48) Assignment rq11 Validators: allows a Profile with a null last name when fi                      rst name present
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:292
+
+  49) Assignment rq11 Validators: does not allow a Profile with a gender other t                      han male or female
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:296
+
+  50) Assignment rq11 Validators: does not allow a boy named Sue
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:299
+
+  51) Assignment rq11 Validators: allows a Profile with gender male
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:302
+
+  52) Assignment rq11 Validators: allows a Profile with gender female
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:305
+
+  53) Assignment check database operations rq12 Cascading delete is represented                       in model dependencies
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:321
+
+  54) Assignment check database operations rq12 User delete must cascade delete                       to Profile, TodoList and TodoItems
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:326
+
+  55) Assignment check database operations rq13 Will return the number of comple                      ted todo_items for a specified user
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:351
+
+  56) Assignment check database operations rq13 User has a get_completed_count m                      ethod
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:349
+
+  57) Assignment check database operations rq14 - Profile should have a get_all_                      profiles class method
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:373
+
+  58) Assignment check database operations rq14 - Profile will return a list of                       profiles between requested birth years in ascending order
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:376
+
+Failures:
+
+  1) Assignment rq02 User Model: User class created
+     Failure/Error: expect(User < ActiveRecord::Base).to eq(true)
+
+     NameError:
+       uninitialized constant User
+     # ./spec/assignment_spec.rb:52:in `block (4 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.01899 seconds (files took 6.67 seconds to load)
+60 examples, 1 failure, 58 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:50 # Assignment rq02 User Model: User class crea                      ted
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rspec -e rq01
+Run options: include {:full_description=>/rq01/}
+
+Assignment
+  rq01
+    Generate Rails application
+      must have top level structure of a rails application
+
+Finished in 0.00801 seconds (files took 6.7 seconds to load)
+1 example, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rails g model User username password_digest
+      invoke  active_record
+      create    db/migrate/20180826032356_create_users.rb
+      create    app/models/user.rb
+      invoke    test_unit
+      create      test/models/user_test.rb
+      create      test/fixtures/users.yml
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rake db:migrate
+== 20180826032356 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0023s
+== 20180826032356 CreateUsers: migrated (0.0023s) =============================
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rails g model Profile gender birth_year:integer first_name last_name User:refe                      rences
+      invoke  active_record
+      create    db/migrate/20180826032649_create_profiles.rb
+      create    app/models/profile.rb
+      invoke    test_unit
+      create      test/models/profile_test.rb
+      create      test/fixtures/profiles.yml
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rspec -e rq02
+Run options: include {:full_description=>/rq02/}
+
+Assignment
+  rq02
+    User Model:
+      User class created
+      User database structure in place
+      User class properties added
+        should respond to #username
+        should respond to #password_digest
+        should respond to #created_at
+        should respond to #updated_at
+
+Finished in 0.42186 seconds (files took 6.7 seconds to load)
+6 examples, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rake db:migrate
+== 20180826032649 CreateProfiles: migrating ===================================
+-- create_table(:profiles)
+   -> 0.0023s
+== 20180826032649 CreateProfiles: migrated (0.0024s) ==========================
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ rspec -e rq03
+Run options: include {:full_description=>/rq03/}
+
+Assignment
+  rq03
+    Profile Model:
+      Profile class created
+      Profile database structure in place
+      Profile 1:1 belongs_to relationship to User in place (FAILED - 1)
+      User 1:1 has_one relationship to Profile in place (PENDING: around hook at                       ./spec/assignment_spec.rb:9 did not execute the example)
+      Profile class properties added
+        example at ./spec/assignment_spec.rb:81 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:82 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:83 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:84 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:85 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:86 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:87 (PENDING: around hook at ./spec/                      assignment_spec.rb:9 did not execute the example)
+
+Pending: (Failures listed here are expected and do not affect your suite's statu                      s)
+
+  1) Assignment rq03 Profile Model: User 1:1 has_one relationship to Profile in                       place
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:103
+
+  2) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:81
+
+  3) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:82
+
+  4) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:83
+
+  5) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:84
+
+  6) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:85
+
+  7) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:86
+
+  8) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:87
+
+Failures:
+
+  1) Assignment rq03 Profile Model: Profile 1:1 belongs_to relationship to User                       in place
+     Failure/Error: expect(Profile.reflect_on_association(:user).macro).to eq :b                      elongs_to
+
+     NoMethodError:
+       undefined method `macro' for nil:NilClass
+     # ./spec/assignment_spec.rb:101:in `block (4 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.5009 seconds (files took 6.64 seconds to load)
+11 examples, 1 failure, 8 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:100 # Assignment rq03 Profile Model: Profile 1:1                       belongs_to relationship to User in place
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (ma                      ster)
+$ ^C
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master)
+$ rspec -e rq03
+Run options: include {:full_description=>/rq03/}
+
+Assignment
+  rq03
+    Profile Model:
+      Profile class created
+      Profile database structure in place
+      Profile 1:1 belongs_to relationship to User in place (FAILED - 1)
+      User 1:1 has_one relationship to Profile in place (PENDING: around hook at ./spec/assignmen     t_spec.rb:9 did not execute the example)
+      Profile class properties added
+        example at ./spec/assignment_spec.rb:81 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:82 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:83 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:84 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:85 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:86 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:87 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) Assignment rq03 Profile Model: User 1:1 has_one relationship to Profile in place
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:103
+
+  2) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:81
+
+  3) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:82
+
+  4) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:83
+
+  5) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:84
+
+  6) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:85
+
+  7) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:86
+
+  8) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:87
+
+Failures:
+
+  1) Assignment rq03 Profile Model: Profile 1:1 belongs_to relationship to User in place
+     Failure/Error: expect(Profile.reflect_on_association(:user).macro).to eq :belongs_to
+
+     NoMethodError:
+       undefined method `macro' for nil:NilClass
+     # ./spec/assignment_spec.rb:101:in `block (4 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.43286 seconds (files took 6.7 seconds to load)
+11 examples, 1 failure, 8 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:100 # Assignment rq03 Profile Model: Profile 1:1 belongs_to relat     ionship to User in place
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master)
+$ rspec -e rq03
+Run options: include {:full_description=>/rq03/}
+
+Assignment
+  rq03
+    Profile Model:
+      Profile class created
+      Profile database structure in place
+      Profile 1:1 belongs_to relationship to User in place
+      User 1:1 has_one relationship to Profile in place (FAILED - 1)
+      Profile class properties added
+        example at ./spec/assignment_spec.rb:81 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:82 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:83 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:84 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:85 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:86 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:87 (PENDING: around hook at ./spec/assignment_spec.r     b:9 did not execute the example)
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:81
+
+  2) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:82
+
+  3) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:83
+
+  4) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:84
+
+  5) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:85
+
+  6) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:86
+
+  7) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:87
+
+Failures:
+
+  1) Assignment rq03 Profile Model: User 1:1 has_one relationship to Profile in place
+     Failure/Error: expect(User.reflect_on_association(:profile).macro).to eq :has_one
+
+     NoMethodError:
+       undefined method `macro' for nil:NilClass
+     # ./spec/assignment_spec.rb:104:in `block (4 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.43186 seconds (files took 6.66 seconds to load)
+11 examples, 1 failure, 7 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:103 # Assignment rq03 Profile Model: User 1:1 has_one relationshi     p to Profile in place
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master)
+$ rspec -e rq03
+Run options: include {:full_description=>/rq03/}
+
+Assignment
+  rq03
+    Profile Model:
+      Profile class created
+      Profile database structure in place
+      Profile 1:1 belongs_to relationship to User in place
+      User 1:1 has_one relationship to Profile in place
+      Profile class properties added
+        should respond to #gender
+        should respond to #birth_year
+        should respond to #first_name
+        should respond to #last_name
+        should respond to #user
+        should respond to #created_at
+        should respond to #updated_at
+
+Finished in 0.44986 seconds (files took 6.71 seconds to load)
+11 examples, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master)
+$ rspec -e rq03
+Run options: include {:full_description=>/rq03/}
+
+Assignment
+  rq03
+    Profile Model:
+      Profile class created
+      Profile database structure in place
+      Profile 1:1 belongs_to relationship to User in place (FAILED - 1)
+      User 1:1 has_one relationship to Profile in place (PENDING: around hook at ./s                  pec/assignment_spec.rb:9 did not execute the example)
+      Profile class properties added
+        example at ./spec/assignment_spec.rb:81 (PENDING: around hook at ./spec/assi                  gnment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:82 (PENDING: around hook at ./spec/assi                  gnment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:83 (PENDING: around hook at ./spec/assi                  gnment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:84 (PENDING: around hook at ./spec/assi                  gnment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:85 (PENDING: around hook at ./spec/assi                  gnment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:86 (PENDING: around hook at ./spec/assi                  gnment_spec.rb:9 did not execute the example)
+        example at ./spec/assignment_spec.rb:87 (PENDING: around hook at ./spec/assi                  gnment_spec.rb:9 did not execute the example)
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) Assignment rq03 Profile Model: User 1:1 has_one relationship to Profile in plac                  e
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:103
+
+  2) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:81
+
+  3) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:82
+
+  4) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:83
+
+  5) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:84
+
+  6) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:85
+
+  7) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:86
+
+  8) Assignment rq03 Profile Model: Profile class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:87
+
+Failures:
+
+  1) Assignment rq03 Profile Model: Profile 1:1 belongs_to relationship to User in p                  lace
+     Failure/Error: expect(Profile.reflect_on_association(:user).macro).to eq :belon                  gs_to
+
+     NoMethodError:
+       undefined method `macro' for nil:NilClass
+     # ./spec/assignment_spec.rb:101:in `block (4 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.44087 seconds (files took 6.67 seconds to load)
+11 examples, 1 failure, 8 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:100 # Assignment rq03 Profile Model: Profile 1:1 bel                  ongs_to relationship to User in place
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rails g model TodoList list_name list_due_date:date
+      invoke  active_record
+      create    db/migrate/20180826034206_create_todo_lists.rb
+      create    app/models/todo_list.rb
+      invoke    test_unit
+      create      test/models/todo_list_test.rb
+      create      test/fixtures/todo_lists.yml
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rake db:migrate
+== 20180826034206 CreateTodoLists: migrating ==================================
+-- create_table(:todo_lists)
+   -> 0.0016s
+== 20180826034206 CreateTodoLists: migrated (0.0017s) =========================
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq04
+Run options: include {:full_description=>/rq04/}
+
+Assignment
+  rq04
+    TodoList database structure in place
+    TodoList Model
+      TodoList class
+    TodoList class properties added
+      should respond to #list_due_date
+      should respond to #list_name
+      should respond to #created_at
+      should respond to #updated_at
+
+Finished in 0.44086 seconds (files took 6.92 seconds to load)
+6 examples, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rails g migration add_relationship_User_TodoLists User:references
+      invoke  active_record
+      create    db/migrate/20180826035035_add_relationship_user_todo_lists.rb
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rails g migration add_relationship_to_TodoList User:references
+      invoke  active_record
+      create    db/migrate/20180826035438_add_relationship_to_todo_list.rb
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rake db:migrate
+== 20180826035438 AddRelationshipToTodoList: migrating ========================
+-- add_reference(:todo_lists, :User, {:index=>true, :foreign_key=>true})
+   -> 0.0017s
+== 20180826035438 AddRelationshipToTodoList: migrated (0.0018s) ===============
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq05
+Run options: include {:full_description=>/rq05/}
+
+Assignment
+  rq05
+    TodoList has a many:1 belongs_to relationship with User (FAILED - 1)
+    User has a 1:many has_many relationship with TodoList (PENDING: around hook at .                  /spec/assignment_spec.rb:9 did not execute the example)
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) Assignment rq05 User has a 1:many has_many relationship with TodoList
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:138
+
+Failures:
+
+  1) Assignment rq05 TodoList has a many:1 belongs_to relationship with User
+     Failure/Error: expect(TodoList.reflect_on_association(:user).macro).to eq :belo                  ngs_to
+
+     NoMethodError:
+       undefined method `macro' for nil:NilClass
+     # ./spec/assignment_spec.rb:136:in `block (3 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.41289 seconds (files took 6.76 seconds to load)
+2 examples, 1 failure, 1 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:135 # Assignment rq05 TodoList has a many:1 belongs_                  to relationship with User
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq05
+Run options: include {:full_description=>/rq05/}
+
+Assignment
+  rq05
+    TodoList has a many:1 belongs_to relationship with User
+    User has a 1:many has_many relationship with TodoList (FAILED - 1)
+
+Failures:
+
+  1) Assignment rq05 User has a 1:many has_many relationship with TodoList
+     Failure/Error: expect(User.reflect_on_association(:todo_lists).macro).to eq :ha                  s_many
+
+     NoMethodError:
+       undefined method `macro' for nil:NilClass
+     # ./spec/assignment_spec.rb:139:in `block (3 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.64555 seconds (files took 6.74 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:138 # Assignment rq05 User has a 1:many has_many rel                  ationship with TodoList
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq05
+Run options: include {:full_description=>/rq05/}
+
+Assignment
+  rq05
+    TodoList has a many:1 belongs_to relationship with User
+    User has a 1:many has_many relationship with TodoList (FAILED - 1)
+
+Failures:
+
+  1) Assignment rq05 User has a 1:many has_many relationship with TodoList
+     Failure/Error: expect(User.reflect_on_association(:todo_lists).macro).to eq :ha                  s_many
+
+     NoMethodError:
+       undefined method `macro' for nil:NilClass
+     # ./spec/assignment_spec.rb:139:in `block (3 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.42286 seconds (files took 6.68 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:138 # Assignment rq05 User has a 1:many has_many rel                  ationship with TodoList
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq05
+Run options: include {:full_description=>/rq05/}
+
+Assignment
+  rq05
+    TodoList has a many:1 belongs_to relationship with User
+    User has a 1:many has_many relationship with TodoList
+
+Finished in 0.42186 seconds (files took 6.69 seconds to load)
+2 examples, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rake db:migrate
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq05
+Run options: include {:full_description=>/rq05/}
+
+Assignment
+  rq05
+    TodoList has a many:1 belongs_to relationship with User
+    User has a 1:many has_many relationship with TodoList
+
+Finished in 0.43186 seconds (files took 6.79 seconds to load)
+2 examples, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rails g TodoItem due_date:date title description:text completed:boolean TodoList:r                  eferences
+Could not find generator 'TodoItem'. Maybe you meant 'model', 'helper' or 'resource'
+Run `rails generate --help` for more options.
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rails g model TodoItem due_date:date title description:text completed:boolean Todo                  List:references
+      invoke  active_record
+      create    db/migrate/20180826041032_create_todo_items.rb
+      create    app/models/todo_item.rb
+      invoke    test_unit
+      create      test/models/todo_item_test.rb
+      create      test/fixtures/todo_items.yml
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rake db:migrate
+== 20180826041032 CreateTodoItems: migrating ==================================
+-- create_table(:todo_items)
+   -> 0.0022s
+== 20180826041032 CreateTodoItems: migrated (0.0022s) =========================
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq06
+Run options: include {:full_description=>/rq06/}
+
+Assignment
+  rq06
+    TodoItem database structure in place
+    TodoItem has a many:1 belongs_to relationship with TodoList (FAILED - 1)
+    TodoList has a 1:many has_many relationship with TodoItem (PENDING: around hook                   at ./spec/assignment_spec.rb:9 did not execute the example)
+    TodoItem will be destroyed when TodoList deleted (PENDING: around hook at ./spec                  /assignment_spec.rb:9 did not execute the example)
+    TodoItem Model
+      TodoItem class (PENDING: around hook at ./spec/assignment_spec.rb:9 did not ex                  ecute the example)
+    TodoItem class properties added
+      example at ./spec/assignment_spec.rb:152 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:153 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:154 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:155 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:156 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:157 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) Assignment rq06 TodoList has a 1:many has_many relationship with TodoItem
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:173
+
+  2) Assignment rq06 TodoItem will be destroyed when TodoList deleted
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:176
+
+  3) Assignment rq06 TodoItem Model TodoItem class
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:145
+
+  4) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:152
+
+  5) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:153
+
+  6) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:154
+
+  7) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:155
+
+  8) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:156
+
+  9) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:157
+
+Failures:
+
+  1) Assignment rq06 TodoItem has a many:1 belongs_to relationship with TodoList
+     Failure/Error: expect(TodoItem.reflect_on_association(:todo_list).macro).to eq                   :belongs_to
+
+     NoMethodError:
+       undefined method `macro' for nil:NilClass
+     # ./spec/assignment_spec.rb:171:in `block (3 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.43586 seconds (files took 6.77 seconds to load)
+11 examples, 1 failure, 9 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:170 # Assignment rq06 TodoItem has a many:1 belongs_                  to relationship with TodoList
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq06
+Run options: include {:full_description=>/rq06/}
+
+Assignment
+  rq06
+    TodoItem database structure in place
+    TodoItem has a many:1 belongs_to relationship with TodoList
+    TodoList has a 1:many has_many relationship with TodoItem
+    TodoItem will be destroyed when TodoList deleted (FAILED - 1)
+    TodoItem Model
+      TodoItem class (PENDING: around hook at ./spec/assignment_spec.rb:9 did not ex                  ecute the example)
+    TodoItem class properties added
+      example at ./spec/assignment_spec.rb:152 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:153 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:154 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:155 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:156 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:157 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) Assignment rq06 TodoItem Model TodoItem class
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:145
+
+  2) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:152
+
+  3) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:153
+
+  4) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:154
+
+  5) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:155
+
+  6) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:156
+
+  7) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:157
+
+Failures:
+
+  1) Assignment rq06 TodoItem will be destroyed when TodoList deleted
+     Failure/Error: expect(TodoList.reflect_on_association(:todo_items).options[:dep                  endent]).to eq :destroy
+
+       expected: :destroy
+            got: nil
+
+       (compared using ==)
+     # ./spec/assignment_spec.rb:177:in `block (3 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.61601 seconds (files took 6.76 seconds to load)
+11 examples, 1 failure, 7 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:176 # Assignment rq06 TodoItem will be destroyed whe                  n TodoList deleted
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq06
+Run options: include {:full_description=>/rq06/}
+
+Assignment
+  rq06
+    TodoItem database structure in place
+    TodoItem has a many:1 belongs_to relationship with TodoList
+    TodoList has a 1:many has_many relationship with TodoItem (FAILED - 1)
+    TodoItem will be destroyed when TodoList deleted (PENDING: around hook at ./spec                  /assignment_spec.rb:9 did not execute the example)
+    TodoItem Model
+      TodoItem class (PENDING: around hook at ./spec/assignment_spec.rb:9 did not ex                  ecute the example)
+    TodoItem class properties added
+      example at ./spec/assignment_spec.rb:152 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:153 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:154 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:155 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:156 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+      example at ./spec/assignment_spec.rb:157 (PENDING: around hook at ./spec/assig                  nment_spec.rb:9 did not execute the example)
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) Assignment rq06 TodoItem will be destroyed when TodoList deleted
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:176
+
+  2) Assignment rq06 TodoItem Model TodoItem class
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:145
+
+  3) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:152
+
+  4) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:153
+
+  5) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:154
+
+  6) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:155
+
+  7) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:156
+
+  8) Assignment rq06 TodoItem class properties added
+     # around hook at ./spec/assignment_spec.rb:9 did not execute the example
+     # ./spec/assignment_spec.rb:157
+
+Failures:
+
+  1) Assignment rq06 TodoList has a 1:many has_many relationship with TodoItem
+     Failure/Error: has_many :todo_items, dependent: :destory
+
+     ArgumentError:
+       The :dependent option must be one of [:destroy, :delete_all, :nullify, :restr                  ict_with_error, :restrict_with_exception], but is :destory
+     # ./app/models/todo_list.rb:3:in `<class:TodoList>'
+     # ./app/models/todo_list.rb:1:in `<top (required)>'
+     # ./spec/assignment_spec.rb:174:in `block (3 levels) in <top (required)>'
+     # ./spec/assignment_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.43986 seconds (files took 6.74 seconds to load)
+11 examples, 1 failure, 8 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:173 # Assignment rq06 TodoList has a 1:many has_many                   relationship with TodoItem
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ ^C
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq06
+Run options: include {:full_description=>/rq06/}
+
+Assignment
+  rq06
+    TodoItem database structure in place
+    TodoItem has a many:1 belongs_to relationship with TodoList
+    TodoList has a 1:many has_many relationship with TodoItem
+    TodoItem will be destroyed when TodoList deleted
+    TodoItem Model
+      TodoItem class
+    TodoItem class properties added
+      should respond to #due_date
+      should respond to #title
+      should respond to #completed
+      should respond to #description
+      should respond to #created_at
+      should respond to #updated_at
+
+Finished in 0.45386 seconds (files took 6.74 seconds to load)
+11 examples, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rake db:migrate
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq07
+Run options: include {:full_description=>/rq07/}
+
+All examples were filtered out
+
+Finished in 0 seconds (files took 6.7 seconds to load)
+0 examples, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rake db:migrate
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rspec -e rq08
+Run options: include {:full_description=>/rq08/}
+
+Assignment
+  rq08
+    User has a 1:many relationship with TodoItem
+    User has a 1:many relationship with TodoItem through TodoList
+
+Finished in 0.42486 seconds (files took 6.77 seconds to load)
+2 examples, 0 failures
+
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rake db:seed
+rake aborted!
+SyntaxError: E:/RubyBasics/course2/HW_Week2/todolists2/todolists/db/seeds.rb:12: syn                  tax error, unexpected {, expecting ']'
+        {username: "Trump,", password_digest: "123456"}
+         ^
+E:/RubyBasics/course2/HW_Week2/todolists2/todolists/db/seeds.rb:15: syntax error, un                  expected ']', expecting end-of-input
+
+Tasks: TOP => db:seed
+(See full trace by running task with --trace)
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rake db:seed
+rake aborted!
+ActiveRecord::UnknownAttributeError: unknown attribute 'user_id' for Profile.
+E:/RubyBasics/course2/HW_Week2/todolists2/todolists/db/seeds.rb:17:in `<top (require                  d)>'
+
+Caused by:
+NoMethodError: undefined method `user_id=' for #<Profile:0x32d5448>
+Did you mean?  user=
+               User_id=
+               user
+               User_id
+               User_id?
+E:/RubyBasics/course2/HW_Week2/todolists2/todolists/db/seeds.rb:17:in `<top (require                  d)>'
+Tasks: TOP => db:seed
+(See full trace by running task with --trace)
+
+zhuoh@ZHLDESKTOP MINGW64 /e/RubyBasics/course2/HW_Week2/todolists2/todolists (master                  )
+$ rails c
+Loading development environment (Rails 4.2.8)
+Switch to inspect mode.
+.exit
+^C

@@ -1,0 +1,39 @@
+User.find_by!(username: "Fiorina").create_profile(gender: "M", birth_year: 1954, first_name: "Carly", last_name: "Fiorina")
+User.find_by!(username: "Trump").create_profile(gender: "M", birth_year: 1946, first_name: "Donald", last_name: "Trump")
+User.find_by!(username: "Carson").create_profile(gender: "M", birth_year: 1951, first_name: "Ben", last_name: "Carson")
+User.find_by!(username: "Clinton").create_profile(gender: "F", birth_year: 1947, first_name: "Hillary", last_name: "Clinton")
+
+User.find_by!(username: "Fiorina").create_todo_list(list_name: "President Fiorina", list_due_date: Date.today.next_year )
+User.find_by!(username: "Trump").create_todo_list(list_name: "President Trump", list_due_date:  Date.today.next_year )
+User.find_by!(username: "Carson").create_todo_list(list_name: "President Carson", list_due_date:  Date.today.next_year )
+User.find_by!(username: "Clinton").create_todo_list(list_name: "President Clinton", list_due_date:  Date.today.next_year  )
+
+
+User.todo_lists.find_by(list_name:"President Fiorina").todo_items.create![
+{due_date: Date.today.next_year, title: "Florida votes", description: "Will win", completed: false},
+{due_date: Date.today.next_year, title: "California votes", description: "Will lose", completed: true},
+{due_date: Date.today.next_year, title: "Texas votes", description: "Will win", completed: true},
+{due_date: Date.today.next_year, title: "Pensylvania votes", description: "Will win", completed: false},
+{due_date: Date.today.next_year, title: "New York votes", description: "Will lose", completed: true}
+]
+User.todo_lists.find_by(list_name:"President Trump").todo_items.create![
+{due_date: Date.today.next_year, title: "Florida votes", description: "Will win", completed: false},
+{due_date: Date.today.next_year, title: "California votes", description: "Will win", completed: true},
+{due_date: Date.today.next_year, title: "Texas votes", description: "Will win", completed: true},
+{due_date: Date.today.next_year, title: "Pensylvania votes", description: "Will win", completed: true},
+{due_date: Date.today.next_year, title: "New York votes", description: "Will win", completed: true}
+]
+User.todo_lists.find_by(list_name:"President Carson").todo_items.create![
+{due_date: Date.today.next_year, title: "Florida votes", description: "Will win", completed: false},
+{due_date: Date.today.next_year, title: "California votes", description: "Will win", completed: true},
+{due_date: Date.today.next_year, title: "Texas votes", description: "Will win", completed: true},
+{due_date: Date.today.next_year, title: "Pensylvania votes", description: "Will win", completed: false},
+{due_date: Date.today.next_year, title: "New York votes", description: "Will lose", completed: false}
+]
+User.todo_lists.find_by(list_name:"President Clinton").todo_items.create![
+{due_date: Date.today.next_year, title: "Florida votes", description: "Will win", completed: true},
+{due_date: Date.today.next_year, title: "California votes", description: "Will win", completed: true},
+{due_date: Date.today.next_year, title: "Texas votes", description: "Will lose", completed: true},
+{due_date: Date.today.next_year, title: "Pensylvania votes", description: "Will win", completed: false},
+{due_date: Date.today.next_year, title: "New York votes", description: "Will win", completed: true}
+]
