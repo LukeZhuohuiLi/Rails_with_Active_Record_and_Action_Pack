@@ -5,7 +5,7 @@ class CreateTodoItems < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.boolean :completed
-      t.references :TodoList, index: true, foreign_key: true
+      t.references :todo_list, index: true, foreign_key: true
 
       t.timestamps null: false
     end
