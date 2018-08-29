@@ -1,0 +1,30 @@
+Lecture2:
+get doesn't change anything from the server
+post or put will create or update information about resources
+
+GET /posts
+def index
+
+GET /posts/1
+def show
+
+DELETE /posts/1
+def destroy
+
+
+
+GET /posts/new
+def new
+
+POST /posts
+def create
+
+
+
+GET /posts/1/edit
+def edit
+
+PATCH/PUT /posts/1
+def update
+
+
