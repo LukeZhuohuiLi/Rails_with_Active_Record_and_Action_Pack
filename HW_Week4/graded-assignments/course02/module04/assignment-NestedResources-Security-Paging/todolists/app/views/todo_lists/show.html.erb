@@ -9,10 +9,6 @@
   <%= @todo_list.list_due_date %>
 </p>
 
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
-<p id="notice"><%= notice %></p>
-
 <h1>Listing Todo Items</h1>
 
 <table>
@@ -40,9 +36,9 @@
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Todo item',  new_todo_list_todo_item_path(@todo_list)%>
+<%= link_to 'New Todo Item', new_todo_list_todo_item_path(@todo_list) %> |
+<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> 
+<%= link_to 'Back', todo_lists_path %>
 
 
 
